@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Callback page</title>
+  </head>
+  <body>
+    <h3>Redirecting ...</h3>
+  <script>
+    setTimeout(function(){
+      var url = '<%= @url %>'; 
+      if(window.opener == null){
+        window.location = url;
+      }else{
+        window.opener.location = url;
+        window.close();
+      }
+    }, 5000);
+  </script>
+  </body>
+</html>

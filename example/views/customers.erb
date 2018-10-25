@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Xero Customers</title>
+  </head>
+  <body>
+    <h2>Here's the code that is powering this view.</h2>
+    <pre>
+      api = Xero::Api.new(oauth_data)
+      @resp = api.get :customers, all: true, params: { where: 'isCustomer=true' }
+    </pre>
+    <h1>Customers within your Xero Account</h1>
+    <ul>
+    <% @resp.each do |c, index|  %>
+      <li><strong><%= c['Name'] %></strong></li>      
+    <% end %>
+    </ul>
+  </body>
+</html>

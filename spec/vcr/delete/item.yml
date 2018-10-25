@@ -1,0 +1,188 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.xero.com/api.xro/2.0/Items/0ba7b77b-3795-4ac1-974f-1ed7e3070057
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="88a575ef7cb45b77c5c25ac0bca5a069",
+        oauth_signature="RJfmwCxVK0mB695CLPD2n5rTib0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540070275", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/QwQLIFddRBYODltURUkgVFpWFgNBTgBMCE4IFgUEClIPVwNNHlNIFA8kUCIOcgBWWVcACXVTJ3AUHwQHDxFVPw==
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '1139'
+      Expires:
+      - Sat, 20 Oct 2018 21:17:56 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 21:17:56 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"ErrorNumber\": 10,\r\n  \"Type\": \"ValidationException\",\r\n
+        \ \"Message\": \"A validation exception occurred\",\r\n  \"Elements\": [\r\n
+        \   {\r\n      \"ItemID\": \"0ba7b77b-3795-4ac1-974f-1ed7e3070057\",\r\n      \"Code\":
+        \"TSS - Black\",\r\n      \"Description\": \"Company Branded T-Shirt Small
+        Black.  Check out our website for other offers!\",\r\n      \"PurchaseDescription\":
+        \"Company Branded T-Shirt Small Black.  Order code #2308\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        20.0000,\r\n        \"COGSAccountCode\": \"500\",\r\n        \"TaxType\":
+        \"NONE\"\r\n      },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\":
+        40.0000,\r\n        \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"T-Shirt Small Black\",\r\n      \"IsTrackedAsInventory\":
+        true,\r\n      \"InventoryAssetAccountCode\": \"140\",\r\n      \"TotalCostPool\":
+        140.00,\r\n      \"QuantityOnHand\": 7.0000,\r\n      \"IsSold\": true,\r\n
+        \     \"IsPurchased\": true,\r\n      \"ValidationErrors\": [\r\n        {\r\n
+        \         \"Message\": \"The item could not be deleted because it is associated
+        with inventory transactions\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 21:17:56 GMT
+- request:
+    method: delete
+    uri: https://api.xero.com/api.xro/2.0/Items/3c838d59-5fb5-4919-9873-ba2a5ef9dd1b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="1a3ccf5d57efdc825e34b4f0e8214715",
+        oauth_signature="HT%2FIvFzS0kfhO%2BOzi0mmMmdYsiw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540070327", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/QwQLIFddRBYODltURUkgVFpWFgNBTgBMCE4IFgQFAlQMWAdNHlNIFA8gVlAPcHVQIiAOcg9WVXQUHwQHDxFVPw==
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '1141'
+      Expires:
+      - Sat, 20 Oct 2018 21:18:47 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 21:18:47 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"ErrorNumber\": 10,\r\n  \"Type\": \"ValidationException\",\r\n
+        \ \"Message\": \"A validation exception occurred\",\r\n  \"Elements\": [\r\n
+        \   {\r\n      \"ItemID\": \"3c838d59-5fb5-4919-9873-ba2a5ef9dd1b\",\r\n      \"Code\":
+        \"TSM - Black\",\r\n      \"Description\": \"Company Branded T-Shirt Medium
+        Black.  Check out our website for other offers!\",\r\n      \"PurchaseDescription\":
+        \"Company Branded T-Shirt Medium Black.  Order code #2382\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        20.0000,\r\n        \"COGSAccountCode\": \"500\",\r\n        \"TaxType\":
+        \"NONE\"\r\n      },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\":
+        40.0000,\r\n        \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"T-Shirt Medium Black\",\r\n      \"IsTrackedAsInventory\":
+        true,\r\n      \"InventoryAssetAccountCode\": \"140\",\r\n      \"TotalCostPool\":
+        80.00,\r\n      \"QuantityOnHand\": 4.0000,\r\n      \"IsSold\": true,\r\n
+        \     \"IsPurchased\": true,\r\n      \"ValidationErrors\": [\r\n        {\r\n
+        \         \"Message\": \"The item could not be deleted because it is associated
+        with inventory transactions\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 21:18:47 GMT
+- request:
+    method: delete
+    uri: https://api.xero.com/api.xro/2.0/Items/e1d100f5-a602-4f0e-94b7-dc12e97b9bc2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="dd0ea35485169a16e13ad80c5ad6ce4f",
+        oauth_signature="YKXjSJHC%2FXup9viV%2FsZYTeM%2FLdE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540070357", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/QwQLIFddRBYODltURUkgVFpWFgNBTgBMCE4IFgQKB1ELWQhNHlNIFHIlV1YJAARQUlUBBwIlJQQUHwQHDxFVPw==
+      Xero-Cell:
+      - favorit
+      Expires:
+      - Sat, 20 Oct 2018 21:19:18 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 21:19:18 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 21:19:18 GMT
+recorded_with: VCR 3.0.3

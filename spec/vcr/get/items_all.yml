@@ -1,0 +1,343 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.xero.com/api.xro/2.0/Items?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      If-Modified-Since:
+      - '2014-01-01T00:00:00'
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="b042c613941b4505b774ef20bc47ac14",
+        oauth_signature="zW9Q1Gg9MjGFyBPSpXfiWxwnjJI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540069595", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/QwQLIFddRBYODltURUktX1JWGkRPUh5SFFIWCAEDA10BUB1MAk5GcnFWXloICgVWV1UECAVWJxMaVQMKEAdt
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '8431'
+      Expires:
+      - Sat, 20 Oct 2018 21:06:35 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 21:06:35 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"Id\": \"9609c38f-c87a-4304-994a-68bf35d702d4\",\r\n  \"Status\":
+        \"OK\",\r\n  \"ProviderName\": \"RubyApi\",\r\n  \"DateTimeUTC\": \"\\/Date(1540069595865)\\/\",\r\n
+        \ \"Items\": [\r\n    {\r\n      \"ItemID\": \"4194d81d-3f6c-4768-8256-36130714637d\",\r\n
+        \     \"Code\": \"BOOK\",\r\n      \"Description\": \"Fish out of Water: Finding
+        Your Brand\",\r\n      \"PurchaseDescription\": \"Fish out of Water: Finding
+        Your Brand\",\r\n      \"UpdatedDateUTC\": \"\\/Date(1537613484990+0000)\\/\",\r\n
+        \     \"PurchaseDetails\": {\r\n        \"UnitPrice\": 15.9500,\r\n        \"AccountCode\":
+        \"500\",\r\n        \"TaxType\": \"NONE\"\r\n      },\r\n      \"SalesDetails\":
+        {\r\n        \"UnitPrice\": 19.9500,\r\n        \"AccountCode\": \"400\",\r\n
+        \       \"TaxType\": \"AVALARA\"\r\n      },\r\n      \"Name\": \"Fish out
+        of Water: Finding Your Brand\",\r\n      \"IsTrackedAsInventory\": false,\r\n
+        \     \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n    {\r\n
+        \     \"ItemID\": \"ca5ae32d-4fe0-4db2-afae-a46a2c922447\",\r\n      \"Code\":
+        \"GB1-White\",\r\n      \"Description\": \"Golf balls - white single. Please
+        reorder with code GB1-White\",\r\n      \"PurchaseDescription\": \"Golf balls
+        - white single. Wholesale catalog item #020812-1\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        4.2000,\r\n        \"AccountCode\": \"500\",\r\n        \"TaxType\": \"NONE\"\r\n
+        \     },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 5.6000,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"Golf balls - white single\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"3c8ea74d-950e-4ff1-b5bb-4e53045e9ac4\",\r\n      \"Code\":
+        \"GB3-White\",\r\n      \"Description\": \"Golf balls - white 3 pack. Please
+        reorder with code GB3-White\",\r\n      \"PurchaseDescription\": \"Golf balls
+        - white 3 pack. Wholesale catalog item #020812-3\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        12.0000,\r\n        \"AccountCode\": \"500\",\r\n        \"TaxType\": \"NONE\"\r\n
+        \     },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 15.0000,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"Golf balls - white 3-pack\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"d28dc221-0c12-47de-abfb-f7bb461163ec\",\r\n      \"Code\":
+        \"GB6-White\",\r\n      \"Description\": \"Golf balls - white 6 pack. Please
+        reorder with code GB6-White\",\r\n      \"PurchaseDescription\": \"Golf balls
+        - white 6 pack. Wholesale catalog item #020812-6\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        20.0000,\r\n        \"AccountCode\": \"500\",\r\n        \"TaxType\": \"NONE\"\r\n
+        \     },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 24.9900,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"Golf balls - white 6-pack\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"e2ab9311-4c2a-4a52-bcbf-907c6e18368a\",\r\n      \"Code\":
+        \"GB9-White\",\r\n      \"Description\": \"Golf balls - white - 9 pack. Please
+        reorder with code GB9-White\",\r\n      \"PurchaseDescription\": \"Golf balls
+        - white 9 pack. Wholesale catalog item #020812-9\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        25.0000,\r\n        \"AccountCode\": \"500\",\r\n        \"TaxType\": \"NONE\"\r\n
+        \     },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 32.0000,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"Golf balls - white 9 pack\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"a81d0111-8071-4a46-82a8-74ac6f1df759\",\r\n      \"Code\":
+        \"PM-BR\",\r\n      \"Description\": \"Project management & implementation
+        - branding workshop with your team\",\r\n      \"PurchaseDescription\": \"Project
+        management & implementation - branding workshop with your team\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        0.0000,\r\n        \"TaxType\": \"\"\r\n      },\r\n      \"SalesDetails\":
+        {\r\n        \"UnitPrice\": 250.0000,\r\n        \"AccountCode\": \"400\",\r\n
+        \       \"TaxType\": \"NONE\"\r\n      },\r\n      \"Name\": \"Project management
+        & implementation - branding\",\r\n      \"IsTrackedAsInventory\": false,\r\n
+        \     \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n    {\r\n
+        \     \"ItemID\": \"caa83dae-b958-45ea-8d2e-05909c781962\",\r\n      \"Code\":
+        \"Support-M\",\r\n      \"Description\": \"Desktop/network support via email
+        & phone.Per month fixed fee for minimum 20 hours/month.\",\r\n      \"PurchaseDescription\":
+        \"Desktop/network support via email & phone.Per month fixed fee for minimum
+        20 hours/month.\",\r\n      \"UpdatedDateUTC\": \"\\/Date(1537613484990+0000)\\/\",\r\n
+        \     \"PurchaseDetails\": {\r\n        \"UnitPrice\": 0.0000,\r\n        \"TaxType\":
+        \"\"\r\n      },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 541.2500,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"NONE\"\r\n      },\r\n
+        \     \"Name\": \"Desktop/network support via email & phone\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"e1d100f5-a602-4f0e-94b7-dc12e97b9bc2\",\r\n      \"Code\":
+        \"Train-MS\",\r\n      \"Description\": \"Half day training - Microsoft Office\",\r\n
+        \     \"PurchaseDescription\": \"Half day training - Microsoft Office\",\r\n
+        \     \"UpdatedDateUTC\": \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\":
+        {\r\n        \"UnitPrice\": 0.0000,\r\n        \"AccountCode\": \"612\",\r\n
+        \       \"TaxType\": \"TAX002\"\r\n      },\r\n      \"SalesDetails\": {\r\n
+        \       \"UnitPrice\": 500.0000,\r\n        \"AccountCode\": \"400\",\r\n
+        \       \"TaxType\": \"NONE\"\r\n      },\r\n      \"Name\": \"Half day training
+        - Microsoft Office\",\r\n      \"IsTrackedAsInventory\": false,\r\n      \"IsSold\":
+        true,\r\n      \"IsPurchased\": true\r\n    },\r\n    {\r\n      \"ItemID\":
+        \"2f00bef1-5fe6-4d95-932d-99cd20f3bf45\",\r\n      \"Code\": \"TSL - Black\",\r\n
+        \     \"Description\": \"Company Branded T-Shirt Large Black.  Check out our
+        website for other offers!\",\r\n      \"PurchaseDescription\": \"Company Branded
+        T-Shirt Large Black.  Order Code #2412\",\r\n      \"UpdatedDateUTC\": \"\\/Date(1537613484990+0000)\\/\",\r\n
+        \     \"PurchaseDetails\": {\r\n        \"UnitPrice\": 20.0000,\r\n        \"COGSAccountCode\":
+        \"500\",\r\n        \"TaxType\": \"NONE\"\r\n      },\r\n      \"SalesDetails\":
+        {\r\n        \"UnitPrice\": 40.0000,\r\n        \"AccountCode\": \"400\",\r\n
+        \       \"TaxType\": \"AVALARA\"\r\n      },\r\n      \"Name\": \"T-Shirt
+        Large Black\",\r\n      \"IsTrackedAsInventory\": true,\r\n      \"InventoryAssetAccountCode\":
+        \"140\",\r\n      \"TotalCostPool\": 100.00,\r\n      \"QuantityOnHand\":
+        5.0000,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"3c838d59-5fb5-4919-9873-ba2a5ef9dd1b\",\r\n      \"Code\":
+        \"TSM - Black\",\r\n      \"Description\": \"Company Branded T-Shirt Medium
+        Black.  Check out our website for other offers!\",\r\n      \"PurchaseDescription\":
+        \"Company Branded T-Shirt Medium Black.  Order code #2382\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        20.0000,\r\n        \"COGSAccountCode\": \"500\",\r\n        \"TaxType\":
+        \"NONE\"\r\n      },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\":
+        40.0000,\r\n        \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"T-Shirt Medium Black\",\r\n      \"IsTrackedAsInventory\":
+        true,\r\n      \"InventoryAssetAccountCode\": \"140\",\r\n      \"TotalCostPool\":
+        80.00,\r\n      \"QuantityOnHand\": 4.0000,\r\n      \"IsSold\": true,\r\n
+        \     \"IsPurchased\": true\r\n    },\r\n    {\r\n      \"ItemID\": \"0ba7b77b-3795-4ac1-974f-1ed7e3070057\",\r\n
+        \     \"Code\": \"TSS - Black\",\r\n      \"Description\": \"Company Branded
+        T-Shirt Small Black.  Check out our website for other offers!\",\r\n      \"PurchaseDescription\":
+        \"Company Branded T-Shirt Small Black.  Order code #2308\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        20.0000,\r\n        \"COGSAccountCode\": \"500\",\r\n        \"TaxType\":
+        \"NONE\"\r\n      },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\":
+        40.0000,\r\n        \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"T-Shirt Small Black\",\r\n      \"IsTrackedAsInventory\":
+        true,\r\n      \"InventoryAssetAccountCode\": \"140\",\r\n      \"TotalCostPool\":
+        140.00,\r\n      \"QuantityOnHand\": 7.0000,\r\n      \"IsSold\": true,\r\n
+        \     \"IsPurchased\": true\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 21:06:36 GMT
+- request:
+    method: get
+    uri: https://api.xero.com/api.xro/2.0/Items?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      If-Modified-Since:
+      - '2014-01-01T00:00:00'
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="e8bdffc94238c9731bcb44910c2b856a",
+        oauth_signature="m0F1CWMxSspklmr%2BPugvYrgq5Ew%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540069596", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/QwQLIFddRBYODltURUktX1JWGkRPUh5SFFIWCAEDC1UIUB1MAk5GcHZWUlN9A3RWVyFzAHYkJhMaVQMKEAdt
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '8431'
+      Expires:
+      - Sat, 20 Oct 2018 21:06:36 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 21:06:36 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"Id\": \"2de5ab8b-e69a-4964-90de-2e4fe3701272\",\r\n  \"Status\":
+        \"OK\",\r\n  \"ProviderName\": \"RubyApi\",\r\n  \"DateTimeUTC\": \"\\/Date(1540069596060)\\/\",\r\n
+        \ \"Items\": [\r\n    {\r\n      \"ItemID\": \"4194d81d-3f6c-4768-8256-36130714637d\",\r\n
+        \     \"Code\": \"BOOK\",\r\n      \"Description\": \"Fish out of Water: Finding
+        Your Brand\",\r\n      \"PurchaseDescription\": \"Fish out of Water: Finding
+        Your Brand\",\r\n      \"UpdatedDateUTC\": \"\\/Date(1537613484990+0000)\\/\",\r\n
+        \     \"PurchaseDetails\": {\r\n        \"UnitPrice\": 15.9500,\r\n        \"AccountCode\":
+        \"500\",\r\n        \"TaxType\": \"NONE\"\r\n      },\r\n      \"SalesDetails\":
+        {\r\n        \"UnitPrice\": 19.9500,\r\n        \"AccountCode\": \"400\",\r\n
+        \       \"TaxType\": \"AVALARA\"\r\n      },\r\n      \"Name\": \"Fish out
+        of Water: Finding Your Brand\",\r\n      \"IsTrackedAsInventory\": false,\r\n
+        \     \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n    {\r\n
+        \     \"ItemID\": \"ca5ae32d-4fe0-4db2-afae-a46a2c922447\",\r\n      \"Code\":
+        \"GB1-White\",\r\n      \"Description\": \"Golf balls - white single. Please
+        reorder with code GB1-White\",\r\n      \"PurchaseDescription\": \"Golf balls
+        - white single. Wholesale catalog item #020812-1\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        4.2000,\r\n        \"AccountCode\": \"500\",\r\n        \"TaxType\": \"NONE\"\r\n
+        \     },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 5.6000,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"Golf balls - white single\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"3c8ea74d-950e-4ff1-b5bb-4e53045e9ac4\",\r\n      \"Code\":
+        \"GB3-White\",\r\n      \"Description\": \"Golf balls - white 3 pack. Please
+        reorder with code GB3-White\",\r\n      \"PurchaseDescription\": \"Golf balls
+        - white 3 pack. Wholesale catalog item #020812-3\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        12.0000,\r\n        \"AccountCode\": \"500\",\r\n        \"TaxType\": \"NONE\"\r\n
+        \     },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 15.0000,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"Golf balls - white 3-pack\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"d28dc221-0c12-47de-abfb-f7bb461163ec\",\r\n      \"Code\":
+        \"GB6-White\",\r\n      \"Description\": \"Golf balls - white 6 pack. Please
+        reorder with code GB6-White\",\r\n      \"PurchaseDescription\": \"Golf balls
+        - white 6 pack. Wholesale catalog item #020812-6\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        20.0000,\r\n        \"AccountCode\": \"500\",\r\n        \"TaxType\": \"NONE\"\r\n
+        \     },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 24.9900,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"Golf balls - white 6-pack\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"e2ab9311-4c2a-4a52-bcbf-907c6e18368a\",\r\n      \"Code\":
+        \"GB9-White\",\r\n      \"Description\": \"Golf balls - white - 9 pack. Please
+        reorder with code GB9-White\",\r\n      \"PurchaseDescription\": \"Golf balls
+        - white 9 pack. Wholesale catalog item #020812-9\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        25.0000,\r\n        \"AccountCode\": \"500\",\r\n        \"TaxType\": \"NONE\"\r\n
+        \     },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 32.0000,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"Golf balls - white 9 pack\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"a81d0111-8071-4a46-82a8-74ac6f1df759\",\r\n      \"Code\":
+        \"PM-BR\",\r\n      \"Description\": \"Project management & implementation
+        - branding workshop with your team\",\r\n      \"PurchaseDescription\": \"Project
+        management & implementation - branding workshop with your team\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        0.0000,\r\n        \"TaxType\": \"\"\r\n      },\r\n      \"SalesDetails\":
+        {\r\n        \"UnitPrice\": 250.0000,\r\n        \"AccountCode\": \"400\",\r\n
+        \       \"TaxType\": \"NONE\"\r\n      },\r\n      \"Name\": \"Project management
+        & implementation - branding\",\r\n      \"IsTrackedAsInventory\": false,\r\n
+        \     \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n    {\r\n
+        \     \"ItemID\": \"caa83dae-b958-45ea-8d2e-05909c781962\",\r\n      \"Code\":
+        \"Support-M\",\r\n      \"Description\": \"Desktop/network support via email
+        & phone.Per month fixed fee for minimum 20 hours/month.\",\r\n      \"PurchaseDescription\":
+        \"Desktop/network support via email & phone.Per month fixed fee for minimum
+        20 hours/month.\",\r\n      \"UpdatedDateUTC\": \"\\/Date(1537613484990+0000)\\/\",\r\n
+        \     \"PurchaseDetails\": {\r\n        \"UnitPrice\": 0.0000,\r\n        \"TaxType\":
+        \"\"\r\n      },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\": 541.2500,\r\n
+        \       \"AccountCode\": \"400\",\r\n        \"TaxType\": \"NONE\"\r\n      },\r\n
+        \     \"Name\": \"Desktop/network support via email & phone\",\r\n      \"IsTrackedAsInventory\":
+        false,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"e1d100f5-a602-4f0e-94b7-dc12e97b9bc2\",\r\n      \"Code\":
+        \"Train-MS\",\r\n      \"Description\": \"Half day training - Microsoft Office\",\r\n
+        \     \"PurchaseDescription\": \"Half day training - Microsoft Office\",\r\n
+        \     \"UpdatedDateUTC\": \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\":
+        {\r\n        \"UnitPrice\": 0.0000,\r\n        \"AccountCode\": \"612\",\r\n
+        \       \"TaxType\": \"TAX002\"\r\n      },\r\n      \"SalesDetails\": {\r\n
+        \       \"UnitPrice\": 500.0000,\r\n        \"AccountCode\": \"400\",\r\n
+        \       \"TaxType\": \"NONE\"\r\n      },\r\n      \"Name\": \"Half day training
+        - Microsoft Office\",\r\n      \"IsTrackedAsInventory\": false,\r\n      \"IsSold\":
+        true,\r\n      \"IsPurchased\": true\r\n    },\r\n    {\r\n      \"ItemID\":
+        \"2f00bef1-5fe6-4d95-932d-99cd20f3bf45\",\r\n      \"Code\": \"TSL - Black\",\r\n
+        \     \"Description\": \"Company Branded T-Shirt Large Black.  Check out our
+        website for other offers!\",\r\n      \"PurchaseDescription\": \"Company Branded
+        T-Shirt Large Black.  Order Code #2412\",\r\n      \"UpdatedDateUTC\": \"\\/Date(1537613484990+0000)\\/\",\r\n
+        \     \"PurchaseDetails\": {\r\n        \"UnitPrice\": 20.0000,\r\n        \"COGSAccountCode\":
+        \"500\",\r\n        \"TaxType\": \"NONE\"\r\n      },\r\n      \"SalesDetails\":
+        {\r\n        \"UnitPrice\": 40.0000,\r\n        \"AccountCode\": \"400\",\r\n
+        \       \"TaxType\": \"AVALARA\"\r\n      },\r\n      \"Name\": \"T-Shirt
+        Large Black\",\r\n      \"IsTrackedAsInventory\": true,\r\n      \"InventoryAssetAccountCode\":
+        \"140\",\r\n      \"TotalCostPool\": 100.00,\r\n      \"QuantityOnHand\":
+        5.0000,\r\n      \"IsSold\": true,\r\n      \"IsPurchased\": true\r\n    },\r\n
+        \   {\r\n      \"ItemID\": \"3c838d59-5fb5-4919-9873-ba2a5ef9dd1b\",\r\n      \"Code\":
+        \"TSM - Black\",\r\n      \"Description\": \"Company Branded T-Shirt Medium
+        Black.  Check out our website for other offers!\",\r\n      \"PurchaseDescription\":
+        \"Company Branded T-Shirt Medium Black.  Order code #2382\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        20.0000,\r\n        \"COGSAccountCode\": \"500\",\r\n        \"TaxType\":
+        \"NONE\"\r\n      },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\":
+        40.0000,\r\n        \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"T-Shirt Medium Black\",\r\n      \"IsTrackedAsInventory\":
+        true,\r\n      \"InventoryAssetAccountCode\": \"140\",\r\n      \"TotalCostPool\":
+        80.00,\r\n      \"QuantityOnHand\": 4.0000,\r\n      \"IsSold\": true,\r\n
+        \     \"IsPurchased\": true\r\n    },\r\n    {\r\n      \"ItemID\": \"0ba7b77b-3795-4ac1-974f-1ed7e3070057\",\r\n
+        \     \"Code\": \"TSS - Black\",\r\n      \"Description\": \"Company Branded
+        T-Shirt Small Black.  Check out our website for other offers!\",\r\n      \"PurchaseDescription\":
+        \"Company Branded T-Shirt Small Black.  Order code #2308\",\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1537613484990+0000)\\/\",\r\n      \"PurchaseDetails\": {\r\n        \"UnitPrice\":
+        20.0000,\r\n        \"COGSAccountCode\": \"500\",\r\n        \"TaxType\":
+        \"NONE\"\r\n      },\r\n      \"SalesDetails\": {\r\n        \"UnitPrice\":
+        40.0000,\r\n        \"AccountCode\": \"400\",\r\n        \"TaxType\": \"AVALARA\"\r\n
+        \     },\r\n      \"Name\": \"T-Shirt Small Black\",\r\n      \"IsTrackedAsInventory\":
+        true,\r\n      \"InventoryAssetAccountCode\": \"140\",\r\n      \"TotalCostPool\":
+        140.00,\r\n      \"QuantityOnHand\": 7.0000,\r\n      \"IsSold\": true,\r\n
+        \     \"IsPurchased\": true\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 21:06:36 GMT
+recorded_with: VCR 3.0.3

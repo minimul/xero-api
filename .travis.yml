@@ -1,0 +1,15 @@
+sudo: false
+language: ruby
+rvm:
+  - 2.4.4
+
+before_script:
+  - cp .env.example_app.oauth1 .env
+
+script:
+  - bundle exec rspec spec/
+
+
+notifications:
+  email:
+    - christian@minimul.com

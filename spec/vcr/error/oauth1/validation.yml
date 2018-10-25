@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.xero.com/api.xro/2.0/Contacts
+    body:
+      encoding: UTF-8
+      string: '{"Name":"Bayside Club"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="9fc33407bd4304b9e497f25fa8e67b1f",
+        oauth_signature="lRwVBvav%2B%2BNTzTFAJtKeTbOy9YM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540038089", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt1WA8SAltHcwsPFkVeWwoBQxlwEAMCFlVAFFIWCBgCHVUKUQVWAldIBARNRFJ9cXIgVSEGAgQkIAcBACRETwRRDksHZQ==
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '588'
+      Expires:
+      - Sat, 20 Oct 2018 12:21:29 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 12:21:29 GMT
+      Connection:
+      - close
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"ErrorNumber\": 10,\r\n  \"Type\": \"ValidationException\",\r\n
+        \ \"Message\": \"A validation exception occurred\",\r\n  \"Elements\": [\r\n
+        \   {\r\n      \"ContactID\": \"00000000-0000-0000-0000-000000000000\",\r\n
+        \     \"Name\": \"Bayside Club\",\r\n      \"Addresses\": [],\r\n      \"Phones\":
+        [],\r\n      \"ContactGroups\": [],\r\n      \"ContactPersons\": [],\r\n      \"HasValidationErrors\":
+        true,\r\n      \"ValidationErrors\": [\r\n        {\r\n          \"Message\":
+        \"The contact name Bayside Club is already assigned to another contact. The
+        contact name must be unique across all active contacts.\"\r\n        }\r\n
+        \     ]\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 12:21:29 GMT
+recorded_with: VCR 3.0.3

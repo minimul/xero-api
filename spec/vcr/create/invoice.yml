@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.xero.com/api.xro/2.0/Invoice
+    body:
+      encoding: UTF-8
+      string: '{"Type":"ACCREC","Contact":{"ContactID":"f477ad8d-44f2-4bb7-a99b-04f28681e849"},"DateString":"2009-05-27T00:00:00","DueDateString":"2009-06-06T00:00:00","LineAmountTypes":"Exclusive","LineItems":[{"Description":"Consulting
+        services as agreed (20% off standard rate)","Quantity":"10","UnitAmount":"100.00","AccountCode":"200","DiscountRate":"20"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="e5c5d86526f56ce463eff80cf0d071dd",
+        oauth_signature="CiIWTHK2qq40HoBPCWiXU6yJgnk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540374795", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/WRcJCltWcwsPFkVeWwoBQxlwEAMCFlVAFFIWCBgCHVcPVAJVClZIBQNWSkEOdnFXJ1MFCHYgXXJzdVNRQU5WA1QRXWU=
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '3560'
+      Expires:
+      - Wed, 24 Oct 2018 09:53:16 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 24 Oct 2018 09:53:16 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"Id\": \"a87d2cdb-c173-4ecd-bfd7-7b9a2bd0b7b1\",\r\n  \"Status\":
+        \"OK\",\r\n  \"ProviderName\": \"RubyApi\",\r\n  \"DateTimeUTC\": \"\\/Date(1540374796375)\\/\",\r\n
+        \ \"Invoices\": [\r\n    {\r\n      \"Type\": \"ACCREC\",\r\n      \"InvoiceID\":
+        \"214aa830-1487-4af9-a86b-d3de52fb992c\",\r\n      \"InvoiceNumber\": \"INV-0041\",\r\n
+        \     \"Reference\": \"\",\r\n      \"Prepayments\": [],\r\n      \"Overpayments\":
+        [],\r\n      \"AmountDue\": 800.00,\r\n      \"AmountPaid\": 0.00,\r\n      \"SentToContact\":
+        false,\r\n      \"CurrencyRate\": 1.000000,\r\n      \"TotalDiscount\": 200.00,\r\n
+        \     \"HasErrors\": false,\r\n      \"IsDiscounted\": true,\r\n      \"Contact\":
+        {\r\n        \"ContactID\": \"f477ad8d-44f2-4bb7-a99b-04f28681e849\",\r\n
+        \       \"ContactStatus\": \"ACTIVE\",\r\n        \"Name\": \"Petrie McLoud
+        Watson & Associates\",\r\n        \"FirstName\": \"Morris\",\r\n        \"LastName\":
+        \"McKenzie\",\r\n        \"EmailAddress\": \"mm@pmwla.co\",\r\n        \"BankAccountDetails\":
+        \"\",\r\n        \"Addresses\": [\r\n          {\r\n            \"AddressType\":
+        \"STREET\",\r\n            \"AddressLine1\": \"79 Madison Ave, Fl 2\",\r\n
+        \           \"AddressLine2\": \"\",\r\n            \"AddressLine3\": \"\",\r\n
+        \           \"AddressLine4\": \"\",\r\n            \"City\": \"New York\",\r\n
+        \           \"Region\": \"NY\",\r\n            \"PostalCode\": \"10016\",\r\n
+        \           \"Country\": \"USA\",\r\n            \"AttentionTo\": \"\"\r\n
+        \         },\r\n          {\r\n            \"AddressType\": \"POBOX\",\r\n
+        \           \"AddressLine1\": \"9 Branyard Terrace\",\r\n            \"City\":
+        \"Coppertown\",\r\n            \"Region\": \"FL\",\r\n            \"PostalCode\":
+        \"34567\",\r\n            \"Country\": \"\",\r\n            \"AttentionTo\":
+        \"\"\r\n          }\r\n        ],\r\n        \"Phones\": [\r\n          {\r\n
+        \           \"PhoneType\": \"MOBILE\",\r\n            \"PhoneNumber\": \"\",\r\n
+        \           \"PhoneAreaCode\": \"\",\r\n            \"PhoneCountryCode\":
+        \"\"\r\n          },\r\n          {\r\n            \"PhoneType\": \"DDI\",\r\n
+        \           \"PhoneNumber\": \"\",\r\n            \"PhoneAreaCode\": \"\",\r\n
+        \           \"PhoneCountryCode\": \"\"\r\n          },\r\n          {\r\n
+        \           \"PhoneType\": \"DEFAULT\",\r\n            \"PhoneNumber\": \"5554561\",\r\n
+        \           \"PhoneAreaCode\": \"102\",\r\n            \"PhoneCountryCode\":
+        \"\"\r\n          },\r\n          {\r\n            \"PhoneType\": \"FAX\",\r\n
+        \           \"PhoneNumber\": \"\",\r\n            \"PhoneAreaCode\": \"\",\r\n
+        \           \"PhoneCountryCode\": \"\"\r\n          }\r\n        ],\r\n        \"UpdatedDateUTC\":
+        \"\\/Date(1540404222390+0000)\\/\",\r\n        \"ContactGroups\": [],\r\n
+        \       \"IsSupplier\": false,\r\n        \"IsCustomer\": true,\r\n        \"SalesTrackingCategories\":
+        [],\r\n        \"PurchasesTrackingCategories\": [],\r\n        \"ContactPersons\":
+        [],\r\n        \"HasValidationErrors\": false\r\n      },\r\n      \"DateString\":
+        \"2009-05-27T00:00:00\",\r\n      \"Date\": \"\\/Date(1243382400000+0000)\\/\",\r\n
+        \     \"DueDateString\": \"2009-06-06T00:00:00\",\r\n      \"DueDate\": \"\\/Date(1244246400000+0000)\\/\",\r\n
+        \     \"Status\": \"DRAFT\",\r\n      \"LineAmountTypes\": \"Exclusive\",\r\n
+        \     \"LineItems\": [\r\n        {\r\n          \"Description\": \"Consulting
+        services as agreed (20% off standard rate)\",\r\n          \"UnitAmount\":
+        100.00,\r\n          \"LineAmount\": 800.00,\r\n          \"Tracking\": [],\r\n
+        \         \"Quantity\": 10.0000,\r\n          \"DiscountRate\": 20.00,\r\n
+        \         \"LineItemID\": \"9526c02b-40e6-412d-a1aa-6b91ef88e203\",\r\n          \"ValidationErrors\":
+        []\r\n        }\r\n      ],\r\n      \"SubTotal\": 800.00,\r\n      \"TotalTax\":
+        0.00,\r\n      \"Total\": 800.00,\r\n      \"UpdatedDateUTC\": \"\\/Date(1540374796313+0000)\\/\",\r\n
+        \     \"CurrencyCode\": \"USD\",\r\n      \"Warnings\": [\r\n        {\r\n
+        \         \"Message\": \"Account code '200' has been removed as it does not
+        match a recognised account.\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 09:53:16 GMT
+recorded_with: VCR 3.0.3

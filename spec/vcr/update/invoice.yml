@@ -1,0 +1,257 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.xero.com/api.xro/2.0/Invoices/a87d2cdb-c173-4ecd-bfd7-7b9a2bd0b7b1
+    body:
+      encoding: UTF-8
+      string: '{"InvoiceNumber":"a87d2cdb-c173-4ecd-bfd7-7b9a2bd0b7b1","Status":"VOIDED","Id":"a87d2cdb-c173-4ecd-bfd7-7b9a2bd0b7b1"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="66cff2a571a44f7bfc169ebc103f21bb",
+        oauth_signature="E4xUBDuYpBQ8wBsNIJ69HqfjTvo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540377667", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/WRcJCltWcwsPFkVeWwoBQxlmEgICFlVAFFIWCBgCHVUMWAdRAFZIBwZZSkF6AwdWJFEDAgIiXQh0AyFRQU5WA1QRXWU=
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '630'
+      Expires:
+      - Wed, 24 Oct 2018 10:41:07 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 24 Oct 2018 10:41:07 GMT
+      Connection:
+      - close
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"ErrorNumber\": 10,\r\n  \"Type\": \"ValidationException\",\r\n
+        \ \"Message\": \"A validation exception occurred\",\r\n  \"Elements\": [\r\n
+        \   {\r\n      \"InvoiceID\": \"a87d2cdb-c173-4ecd-bfd7-7b9a2bd0b7b1\",\r\n
+        \     \"InvoiceNumber\": \"a87d2cdb-c173-4ecd-bfd7-7b9a2bd0b7b1\",\r\n      \"Payments\":
+        [],\r\n      \"CreditNotes\": [],\r\n      \"Prepayments\": [],\r\n      \"Overpayments\":
+        [],\r\n      \"HasErrors\": true,\r\n      \"IsDiscounted\": false,\r\n      \"Status\":
+        \"VOIDED\",\r\n      \"LineItems\": [],\r\n      \"ValidationErrors\": [\r\n
+        \       {\r\n          \"Message\": \"An existing Invoice with the specified
+        InvoiceID could not be found\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 10:41:07 GMT
+- request:
+    method: post
+    uri: https://api.xero.com/api.xro/2.0/Invoices/INV-0041
+    body:
+      encoding: UTF-8
+      string: '{"InvoiceNumber":"INV-0041","Status":"VOIDED","Id":"INV-0041"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="ba2c7aad96ad82e4cc7b8545470cfb70",
+        oauth_signature="fIFoRtu94S9IuCwZRo3b52eJ8Os%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540379138", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/WRcJCltWcwsPFkVeWwoBQxlmEgICFlVAFFIWCBgCHVUPVwBYBlZIAAVNRCABBQVRWVACcnFTXQYHAyBETwRRDksHZQ==
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '1833'
+      Expires:
+      - Wed, 24 Oct 2018 11:05:38 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 24 Oct 2018 11:05:38 GMT
+      Connection:
+      - close
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"ErrorNumber\": 10,\r\n  \"Type\": \"ValidationException\",\r\n
+        \ \"Message\": \"A validation exception occurred\",\r\n  \"Elements\": [\r\n
+        \   {\r\n      \"Type\": \"ACCREC\",\r\n      \"InvoiceID\": \"214aa830-1487-4af9-a86b-d3de52fb992c\",\r\n
+        \     \"InvoiceNumber\": \"INV-0041\",\r\n      \"Payments\": [],\r\n      \"CreditNotes\":
+        [],\r\n      \"Prepayments\": [],\r\n      \"Overpayments\": [],\r\n      \"TotalDiscount\":
+        200.00,\r\n      \"HasErrors\": true,\r\n      \"IsDiscounted\": true,\r\n
+        \     \"Contact\": {\r\n        \"ContactID\": \"f477ad8d-44f2-4bb7-a99b-04f28681e849\",\r\n
+        \       \"Addresses\": [],\r\n        \"Phones\": [],\r\n        \"ContactGroups\":
+        [],\r\n        \"ContactPersons\": [],\r\n        \"HasValidationErrors\":
+        false\r\n      },\r\n      \"DateString\": \"2009-05-27T00:00:00\",\r\n      \"Date\":
+        \"\\/Date(1243382400000+0000)\\/\",\r\n      \"DueDateString\": \"2009-06-06T00:00:00\",\r\n
+        \     \"DueDate\": \"\\/Date(1244246400000+0000)\\/\",\r\n      \"Status\":
+        \"VOIDED\",\r\n      \"LineAmountTypes\": \"Exclusive\",\r\n      \"LineItems\":
+        [\r\n        {\r\n          \"Description\": \"Consulting services as agreed
+        (20% off standard rate)\",\r\n          \"UnitAmount\": 100.00,\r\n          \"LineAmount\":
+        800.00,\r\n          \"Tracking\": [],\r\n          \"Quantity\": 10.0000,\r\n
+        \         \"DiscountRate\": 20.00,\r\n          \"LineItemID\": \"9526c02b-40e6-412d-a1aa-6b91ef88e203\"\r\n
+        \       }\r\n      ],\r\n      \"SubTotal\": 800.00,\r\n      \"TotalTax\":
+        0.00,\r\n      \"Total\": 800.00,\r\n      \"CurrencyCode\": \"USD\",\r\n
+        \     \"ValidationErrors\": [\r\n        {\r\n          \"Message\": \"The
+        document date cannot be before the period lock date, currently set at 31-Jul-2010\"\r\n
+        \       },\r\n        {\r\n          \"Message\": \"Invoice not of valid status
+        for modification\"\r\n        },\r\n        {\r\n          \"Message\": \"The
+        TaxType field is mandatory\"\r\n        },\r\n        {\r\n          \"Message\":
+        \"Account code must be specified\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 11:05:38 GMT
+- request:
+    method: post
+    uri: https://api.xero.com/api.xro/2.0/Invoices/INV-0038
+    body:
+      encoding: UTF-8
+      string: '{"InvoiceNumber":"INV-0038","Status":"VOIDED","Id":"INV-0038"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="488a9a403b361c8218dd37a1e7b800bd",
+        oauth_signature="9Im0Y3kJqzi6Hd%2FpN8flRBv9GjE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540379231", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHixlIUt/WRcJCltWcwsPFkVeWwoBQxlmEgICFlVAFFIWCBgCHVYJUwhVAFRIAAVNRCd5AgldVyBxAXRWUXV3dydETwRRDksHZQ==
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '4662'
+      Expires:
+      - Wed, 24 Oct 2018 11:07:12 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 24 Oct 2018 11:07:12 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"Id\": \"ad07b61c-b852-4b0f-9689-900676743f20\",\r\n  \"Status\":
+        \"OK\",\r\n  \"ProviderName\": \"RubyApi\",\r\n  \"DateTimeUTC\": \"\\/Date(1540379232234)\\/\",\r\n
+        \ \"Invoices\": [\r\n    {\r\n      \"Type\": \"ACCREC\",\r\n      \"InvoiceID\":
+        \"9eb7b996-4ac6-4cf8-8ee8-eb30d6e572e3\",\r\n      \"InvoiceNumber\": \"INV-0038\",\r\n
+        \     \"Reference\": \"GB1-White\",\r\n      \"Prepayments\": [],\r\n      \"Overpayments\":
+        [],\r\n      \"AmountDue\": 234.00,\r\n      \"AmountPaid\": 0.00,\r\n      \"SentToContact\":
+        true,\r\n      \"CurrencyRate\": 1.000000,\r\n      \"HasErrors\": false,\r\n
+        \     \"IsDiscounted\": false,\r\n      \"Contact\": {\r\n        \"ContactID\":
+        \"82d67717-1d2e-4f44-be65-f73a68df8a9f\",\r\n        \"ContactStatus\": \"ACTIVE\",\r\n
+        \       \"Name\": \"Bayside Club\",\r\n        \"FirstName\": \"Bob\",\r\n
+        \       \"LastName\": \"Partridge\",\r\n        \"EmailAddress\": \"bob.partridge@bayclub.co\",\r\n
+        \       \"SkypeUserName\": \"bayside577\",\r\n        \"BankAccountDetails\":
+        \"101-555-101 00123-12345\",\r\n        \"TaxNumber\": \"EIN 55-123456\",\r\n
+        \       \"AccountsReceivableTaxType\": \"INPUT\",\r\n        \"AccountsPayableTaxType\":
+        \"OUTPUT\",\r\n        \"Addresses\": [\r\n          {\r\n            \"AddressType\":
+        \"POBOX\",\r\n            \"AddressLine1\": \"P O Box 3354\",\r\n            \"AddressLine2\":
+        \"South Mailing Centre\",\r\n            \"City\": \"Oaktown\",\r\n            \"Region\":
+        \"NY\",\r\n            \"PostalCode\": \"12345\",\r\n            \"Country\":
+        \"USA\",\r\n            \"AttentionTo\": \"Club Secretary\"\r\n          },\r\n
+        \         {\r\n            \"AddressType\": \"STREET\",\r\n            \"AddressLine1\":
+        \"79 Madison Ave, Fl 2\",\r\n            \"AddressLine2\": \"\",\r\n            \"AddressLine3\":
+        \"\",\r\n            \"AddressLine4\": \"\",\r\n            \"City\": \"New
+        York\",\r\n            \"Region\": \"NY\",\r\n            \"PostalCode\":
+        \"10016\",\r\n            \"Country\": \"USA\",\r\n            \"AttentionTo\":
+        \"Club Secretary\"\r\n          }\r\n        ],\r\n        \"Phones\": [\r\n
+        \         {\r\n            \"PhoneType\": \"MOBILE\",\r\n            \"PhoneNumber\":
+        \"5554455\",\r\n            \"PhoneAreaCode\": \"101\",\r\n            \"PhoneCountryCode\":
+        \"\"\r\n          },\r\n          {\r\n            \"PhoneType\": \"DEFAULT\",\r\n
+        \           \"PhoneNumber\": \"5554455\",\r\n            \"PhoneAreaCode\":
+        \"102\",\r\n            \"PhoneCountryCode\": \"\"\r\n          },\r\n          {\r\n
+        \           \"PhoneType\": \"FAX\",\r\n            \"PhoneNumber\": \"5555566\",\r\n
+        \           \"PhoneAreaCode\": \"102\",\r\n            \"PhoneCountryCode\":
+        \"\"\r\n          },\r\n          {\r\n            \"PhoneType\": \"DDI\",\r\n
+        \           \"PhoneNumber\": \"5554418\",\r\n            \"PhoneAreaCode\":
+        \"202\",\r\n            \"PhoneCountryCode\": \"\"\r\n          }\r\n        ],\r\n
+        \       \"UpdatedDateUTC\": \"\\/Date(1540404222390+0000)\\/\",\r\n        \"ContactGroups\":
+        [\r\n          {\r\n            \"ContactGroupID\": \"1b979d15-4ad9-42d7-8111-85b990477df0\",\r\n
+        \           \"Name\": \"Training\",\r\n            \"Status\": \"ACTIVE\",\r\n
+        \           \"Contacts\": [],\r\n            \"HasValidationErrors\": false\r\n
+        \         }\r\n        ],\r\n        \"IsSupplier\": true,\r\n        \"IsCustomer\":
+        true,\r\n        \"SalesTrackingCategories\": [],\r\n        \"PurchasesTrackingCategories\":
+        [],\r\n        \"BatchPayments\": {\r\n          \"BankAccountNumber\": \"101-555-101
+        00123-12345\",\r\n          \"BankAccountName\": \"Madeup Town Bank\",\r\n
+        \         \"Details\": \"OIT-US\",\r\n          \"Code\": \"\",\r\n          \"Reference\":
+        \"\"\r\n        },\r\n        \"ContactPersons\": [],\r\n        \"HasValidationErrors\":
+        false\r\n      },\r\n      \"DateString\": \"2018-10-20T00:00:00\",\r\n      \"Date\":
+        \"\\/Date(1539993600000+0000)\\/\",\r\n      \"DueDateString\": \"2018-10-30T00:00:00\",\r\n
+        \     \"DueDate\": \"\\/Date(1540857600000+0000)\\/\",\r\n      \"BrandingThemeID\":
+        \"324587a9-7eed-46c0-ad64-fa941a1b5b3e\",\r\n      \"Status\": \"VOIDED\",\r\n
+        \     \"LineAmountTypes\": \"Inclusive\",\r\n      \"LineItems\": [\r\n        {\r\n
+        \         \"ItemCode\": \"GB1-White\",\r\n          \"Description\": \"Golf
+        balls - white single\",\r\n          \"UnitAmount\": 5.60,\r\n          \"TaxType\":
+        \"INPUT\",\r\n          \"TaxAmount\": 18.97,\r\n          \"LineAmount\":
+        224.00,\r\n          \"AccountCode\": \"400\",\r\n          \"Tracking\":
+        [],\r\n          \"Quantity\": 40.0000,\r\n          \"LineItemID\": \"875a3133-f909-4166-9c02-957b17ef34a0\",\r\n
+        \         \"ValidationErrors\": []\r\n        },\r\n        {\r\n          \"Description\":
+        \"Courier charge\",\r\n          \"UnitAmount\": 10.00,\r\n          \"TaxType\":
+        \"OUTPUT\",\r\n          \"TaxAmount\": 0.85,\r\n          \"LineAmount\":
+        10.00,\r\n          \"AccountCode\": \"400\",\r\n          \"Tracking\": [],\r\n
+        \         \"Quantity\": 1.0000,\r\n          \"LineItemID\": \"64838695-6657-4438-8989-c69c2675aa5c\",\r\n
+        \         \"ValidationErrors\": []\r\n        }\r\n      ],\r\n      \"SubTotal\":
+        214.18,\r\n      \"TotalTax\": 19.82,\r\n      \"Total\": 234.00,\r\n      \"UpdatedDateUTC\":
+        \"\\/Date(1540379232093+0000)\\/\",\r\n      \"CurrencyCode\": \"USD\"\r\n
+        \   }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 11:07:12 GMT
+recorded_with: VCR 3.0.3

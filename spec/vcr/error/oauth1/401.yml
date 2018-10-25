@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.xero.com/api.xro/2.0/CreditNotes/34323-343434dsaf-3431
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="fd92cab79552abf13d0ab8dde02199a0",
+        oauth_signature="ij4GeOpTiE2K5R677JCGHVQnltQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540036539", oauth_token="12345", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="10.144.143.94"
+      Content-Length:
+      - '117'
+      Expires:
+      - Sat, 20 Oct 2018 11:55:40 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 11:55:40 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: oauth_problem=token_rejected&oauth_problem_advice=Token%2012345%20does%20not%20match%20an%20expected%20ACCESS%20token
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 11:55:40 GMT
+- request:
+    method: post
+    uri: https://api.xero.com/api.xro/2.0/BankStatements/34323-343434dsaf-3431
+    body:
+      encoding: UTF-8
+      string: '{"Id":"34323-343434dsaf-3431"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="413a83092e2b7cddc9f3c53360041e3a",
+        oauth_signature="A0Uhg588U8Mlm6CfgB5twyBURBY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540036998", oauth_token="12345", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="10.144.113.86"
+      Content-Length:
+      - '117'
+      Expires:
+      - Sat, 20 Oct 2018 12:03:18 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 12:03:18 GMT
+      Connection:
+      - close
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: oauth_problem=token_rejected&oauth_problem_advice=Token%2012345%20does%20not%20match%20an%20expected%20ACCESS%20token
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 12:03:18 GMT
+- request:
+    method: get
+    uri: https://api.xero.com/api.xro/2.0/Journals
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="8f5a4e2dca6fb132626a850320453330",
+        oauth_signature="Jxnr6BnmU9es7SXmpd0UvUj3g5s%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540037094", oauth_token="12345", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="10.144.159.153"
+      Content-Length:
+      - '117'
+      Expires:
+      - Sat, 20 Oct 2018 12:04:55 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 12:04:55 GMT
+      Connection:
+      - keep-alive
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: oauth_problem=token_rejected&oauth_problem_advice=Token%2012345%20does%20not%20match%20an%20expected%20ACCESS%20token
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 12:04:55 GMT
+recorded_with: VCR 3.0.3

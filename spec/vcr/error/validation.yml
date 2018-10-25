@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.xero.com/api.xro/2.0/Contacts
+    body:
+      encoding: UTF-8
+      string: '{"Name":"Bayside Club"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="4ad926fa238194508d94ec1654c6033c",
+        oauth_signature="jGtRZ8y5NKKgOAvjQ90%2FxjdLG2c%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540035913", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="10.144.143.94"
+      Content-Length:
+      - '85'
+      Expires:
+      - Sat, 20 Oct 2018 11:45:13 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 20 Oct 2018 11:45:13 GMT
+      Connection:
+      - close
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: oauth_problem=token_expired&oauth_problem_advice=The%20access%20token%20has%20expired
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 11:45:13 GMT
+recorded_with: VCR 3.0.3

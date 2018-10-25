@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Xero Connect</title>
+  </head>
+  <body>
+    <a href="<%= base_url %>/auth/xero">
+      <img src="/connect_xero_button_blue_2x.png" alt="Xero Blue Connect Button" />
+    </a>
+    <% if session[:token] %>
+      <ul>
+        <li>Token: <input type="text" value="<%= session[:token] %>" size="100" /></li>
+        <li>Secret: <input type="text" value="<%= session[:secret] %>" size="100" /></li>
+        <li><strong><a href="/customers">View All Customers</a></strong></li>
+      </ul>
+    <% end %>
+
+  </body>
+</html>

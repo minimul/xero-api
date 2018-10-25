@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.xero.com/api.xro/2.0/BankStatements/34323-343434dsaf-3431
+    body:
+      encoding: UTF-8
+      string: '{"Id":"34323-343434dsaf-3431"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json;charset=UTF-8
+      User-Agent:
+      - Faraday v0.15.3
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER_KEY>", oauth_nonce="81c0b06f057d57e5564adffb27a61046",
+        oauth_signature="gJwvgm2gPqilBm4NbriFQqPNK9U%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1540382012", oauth_token="<ACCESS_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      Www-Authenticate:
+      - OAuth Realm="api.xero.com"
+      X-Newrelic-App-Data:
+      - PxQGWFBRCAEER1BWDwgGX1wIBBFORDQHUjZKA1ZLVVFHDFYPHiBgMksHGVFJGFtcXhATDVtdUhQZHk1aBhtBTgBMCE4IFgQDAFAJVwhNAFJIFABQU1MIAgVTIFBxc3MgVXUUHwQHDxFVPw==
+      Xero-Cell:
+      - favorit
+      Content-Length:
+      - '47'
+      Expires:
+      - Wed, 24 Oct 2018 11:53:33 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 24 Oct 2018 11:53:33 GMT
+      Connection:
+      - close
+      X-Client-Tls-Ver:
+      - tls1.2
+    body:
+      encoding: UTF-8
+      string: The resource you're looking for cannot be found
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 11:53:33 GMT
+recorded_with: VCR 3.0.3
