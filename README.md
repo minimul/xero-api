@@ -33,7 +33,7 @@ For example, here are the total code line counts (of `.rb` files):
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'xero_api'
+gem 'xero-api'
 ```
 
 And then execute:
