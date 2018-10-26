@@ -11,10 +11,10 @@
 - Built leveraging [Faraday](https://github.com/lostisland/faraday).
 - Built knowing that OAuth2 might be in the not-to-distant future.
 
-## Why choose this library over the established defacto Ruby-Xero libraries?
+## Why another library when there are other more mature, established Ruby Xero libraries?
 
-Both of those gems were built 6+ years ago when the Xero API was XML only, therefore, they are loaded with *XML cruft*.
-For example, here are the total code line of code count of `.rb` files:
+Both of the current de facto Ruby Xero client gems were built 6+ years ago when the Xero API was XML only, therefore, they are loaded with *XML cruft*.
+For example, here are the total code line counts (of `.rb` files):
 
 - Total LOC count of :
   - **minimul/xero-api** => **910!** 🌈
@@ -76,7 +76,7 @@ One queries the Xero API [mostly using URL parameters](https://developer.xero.co
   resp = api.get(:users, path: '3138017f-8ddc-420e-a159-e7e1cf9e643d/History')
 ```
 
-See all the arguments for the [`.get` method]().
+See all the arguments for the [`.get` method](https://github.com/minimul/xero-api/blob/447170ff1035103ed251bf203cf95450bda0f377/lib/xero/api/methods.rb#L4).
 
 ## .create
 
@@ -114,7 +114,7 @@ See all the arguments for the [`.get` method]().
   p resp.dig("Contacts").size #=> 60
 ```
 
-See all the arguments for the [`.create` method]().
+See all the arguments for the [`.create` method](https://github.com/minimul/xero-api/blob/447170ff1035103ed251bf203cf95450bda0f377/lib/xero/api/methods.rb#L14).
 
 ## .update
 
@@ -127,14 +127,14 @@ See all the arguments for the [`.create` method]().
   p response.dig("Invoices", 0, "Status") #=> VOIDED
 ```
 
-See all the arguments for the [`.update` method]().
+See all the arguments for the [`.update` method](https://github.com/minimul/xero-api/blob/447170ff1035103ed251bf203cf95450bda0f377/lib/xero/api/methods.rb#L19).
 
 ## .delete
 
 ```ruby
   api.delete(:items, id: "e1d100f5-a602-4f0e-94b7-dc12e97b9bc2")
 ```
-See all the arguments for the [`.delete` method]().
+See all the arguments for the [`.delete` method](https://github.com/minimul/xero-api/blob/447170ff1035103ed251bf203cf95450bda0f377/lib/xero/api/methods.rb#L25).
 
 ## Configuration options
 ```
