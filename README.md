@@ -11,6 +11,10 @@
 - Built leveraging [Faraday](https://github.com/lostisland/faraday).
 - Built knowing that OAuth2 might be in the not-to-distant future.
 
+## Sweet, How Can I Get Started Fast?
+
+The fastest method is to start with this [screencast](https://minimul.com/getting-started-with-the-xero-api-gem.html).
+
 ## Why another library when there are other more mature, established Ruby Xero libraries?
 
 Both of the current de facto Ruby Xero client gems were built 6+ years ago when the Xero API was XML only, therefore, they are loaded with *XML cruft*.
@@ -188,7 +192,7 @@ Xero::Api.logger = Rails.logger
   to see what is going on under the hood.
   - **Important:** In the [`/auth/xero/callback`](https://github.com/minimul/xero-api/blob/master/example/oauth.rb) route there is code there that will automatically update your `.env` file.
 
-### Protip: Once your .env file is completely filled out you can use the console to play around in your sandbox
+### Protip: Once your .env file is completely filled out you can use the console to play around
 ```
 bin/console test
 >> @xero_api.get :contacts, id: '5345-as543-4-afgafadsafsad-45334'
