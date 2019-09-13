@@ -1,7 +1,7 @@
 require 'faraday'
 
 # @private
-module FaradayMiddleware
+module Xero::Api::FaradayMiddleware
   # @private
   class RaiseHttpException < Faraday::Middleware
     def call(env)
