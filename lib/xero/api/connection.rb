@@ -93,7 +93,7 @@ class Xero::Api
     end
 
     def add_exception_middleware(conn)
-      conn.use FaradayMiddleware::RaiseHttpException
+      conn.use Xero::Api::FaradayMiddleware::RaiseHttpException
     end
 
     def add_authorization_middleware(conn)
