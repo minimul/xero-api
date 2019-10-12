@@ -2,8 +2,8 @@
 
 ### Ruby client for the Xero API version 2.
 - **Pure JSON-in / JSON-out.** No XML support.
-- 4 main methods: **.get, .create, .update, and .delete**
-- No validation rules built into the gem. **Validation comes from API only**.
+- 4 main methods: **.get, .create, .update, and .delete**.
+- No validation rules built into the gem. **Validation comes from the API only**.
 - Close to the metal experience.
 - First class logging.
 - Robust error handling.
@@ -30,7 +30,7 @@ For example, here are the total code line counts (of `.rb` files):
 ## Current Limitations
 
 - Accounting API only.
-- Only for public and partner Xero apps.
+- Only [public apps](https://developer.xero.com/documentation/getting-started/api-application-types) are supported at the moment but partner app support [is around the corner](https://github.com/minimul/xero-api/issues/4). Please help contribute.
 
 ## Installation
 
