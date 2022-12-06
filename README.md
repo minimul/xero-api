@@ -25,7 +25,7 @@ For example, here are the total code line counts (of `.rb` files):
   - waynerobinson/xeroizer => 6019
   - xero-gateway/xero_gateway => 5545
 
-## Ruby >= 2.4.0 required
+## Ruby >= 2.7.0 required
 
 ## Current Limitations
 
@@ -179,13 +179,13 @@ Xero::Api.logger = Rails.logger
 ```
 
 ### Spin up an example
+## THIS SECTION NEEDS TO UPDATED TO OAUTH2
 
 1. Follow and do all in Step 1 from the [Getting Started Guide](https://developer.xero.com/documentation/getting-started/getting-started-guide).
 1. `git clone git://github.com/minimul/xero-api && cd xero-api`
 1. `bundle`
 1. Create a `.env` file
-  1. `cp .env.example_app.oauth1 .env`
-  1. Edit the `.env` file values with `consumer_key` and `consumer_secret`.
+  1. `cp .env.example_app.oauth2 .env`
 1. Start up the example app => `ruby example/oauth.rb`
 1. In browser go to `http://localhost:9393`.
 1. Use the `Connect to Xero` button to connect to your Xero account.
@@ -208,7 +208,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/minimu
 - `git clone git://github.com/minimul/xero-api && cd xero-api`
 - `bundle`
 - Create a `.env` file
-  - `cp .env.example_app.oauth1 .env`
+  - `cp .env.example_app.oauth2 .env`
 - `bundle exec rake`
 
 #### Creating new specs or modifying existing spec that have been recorded using the VCR gem.
