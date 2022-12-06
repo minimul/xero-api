@@ -30,7 +30,7 @@ For example, here are the total code line counts (of `.rb` files):
 ## Current Limitations
 
 - Accounting API only.
-- Only [public apps](https://developer.xero.com/documentation/getting-started/api-application-types) are supported at the moment but partner app support [is around the corner](https://github.com/minimul/xero-api/issues/4). Please help contribute.
+- Only [Custom Connections](https://developer.xero.com/documentation/guides/oauth2/custom-connections) and OAuth2 are supported.
 
 ## Installation
 
@@ -52,11 +52,13 @@ Or install it yourself as:
 ## Initialize
 
 ```ruby
-  creds = account.xero_account # or wherever you are storing the OAuth creds
-  xero_api = Xero::Api.new(token: creds.token,
-                       token_secret: creds.secret,
-                       consumer_key: '*****',
-                       consumer_secret: '********')
+  require 'oauth2'
+  require 'xero/api'
+
+  client = OAuth2::Client.new(ENV['XERO_OAUTH2_CLIENT_ID'), ENV['XERO_OAUTH2_CLIENT_SECRET'], token_url: 'https://identity.xero.com/connect/token' )
+  client_credentials = client.client_credentials.get_token
+
+  api = Xero::Api.new(access_token: client_credentials.token)
 ```
 
 ## .get
@@ -87,8 +89,8 @@ See all the arguments for the [`.get` method](https://github.com/minimul/xero-ap
 ```ruby
   payload = {
       "Type": "ACCREC",
-      "Contact": { 
-        "ContactID": "f477ad8d-44f2-4bb7-a99b-04f28681e849" 
+      "Contact": {
+        "ContactID": "f477ad8d-44f2-4bb7-a99b-04f28681e849"
       },
       "DateString": api.standard_date(Time.utc(2009, 05, 27)),
       "DueDateString": api.standard_date(Time.utc(2009, 06, 06)),
@@ -156,7 +158,7 @@ Xero::Api.logger = Rails.logger
 ### .upload_attachment
 ```ruby
   file_name = 'connect_xero_button_blue_2x.png'
-  resp = api.upload_attachment(:invoices, id: '9eb7b996-4ac6-4cf8-8ee8-eb30d6e572e3', 
+  resp = api.upload_attachment(:invoices, id: '9eb7b996-4ac6-4cf8-8ee8-eb30d6e572e3',
                                file_name: file_name, content_type: 'image/png',
                                attachment: "#{__dir__}/../../../example/public/#{file_name}")
 ```
@@ -210,9 +212,8 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/minimu
 - `bundle exec rake`
 
 #### Creating new specs or modifying existing spec that have been recorded using the VCR gem.
-- All specs that require interaction with the API must be recorded against the Xero Demo Company. 
+- All specs that require interaction with the API must be recorded against the Xero Demo Company.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

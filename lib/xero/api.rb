@@ -24,7 +24,7 @@ module Xero
     LOG_TAG = "[xero-api gem]"
 
     def initialize(attributes = {})
-      raise Xero::Api::Error, "missing or blank keyword: token" unless attributes.key?(:token) and !attributes[:token].nil?
+      raise Xero::Api::Error, "missing or blank keyword: access_token" unless attributes.key?(:access_token) and !attributes[:access_token].nil?
       attributes = default_attributes.merge!(attributes)
       attributes.each do |attribute, value|
         public_send("#{attribute}=", value)
