@@ -179,7 +179,7 @@ Xero::Api.logger = Rails.logger
 ```
 
 ### Spin up an example
-## THIS SECTION NEEDS TO UPDATED TO OAUTH2
+## THIS SECTION NEEDS TO BE UPDATED TO OAUTH2
 
 1. Follow and do all in Step 1 from the [Getting Started Guide](https://developer.xero.com/documentation/getting-started/getting-started-guide).
 1. `git clone git://github.com/minimul/xero-api && cd xero-api`
